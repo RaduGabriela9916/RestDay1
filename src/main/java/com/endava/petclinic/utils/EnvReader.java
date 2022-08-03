@@ -28,4 +28,34 @@ public class EnvReader {
     public static Integer getPort(){
         return Integer.parseInt( properties.getProperty( "port" ) );
     }
+
+    public static Integer getPortSecured(){
+        return Integer.parseInt(properties.getProperty("portSecured"));
+    }
+
+    public static String getApiKey(){
+        return properties.getProperty("ApiKey");
+    }
+
+    public static String getApiKeySecret(){
+        return properties.getProperty("ApiKeysecret");
+    }
+
+    public static String getAccessToken(){
+        return properties.getProperty("AccessToken");
+    }
+
+    public static String getAccessTokenSecret(){
+        return properties.getProperty("AccessTokenSecret");
+    }
+
+    public static String getTwitterUri(){
+        return properties.getProperty("twitterUri");
+    }
+
+    public static String getTwitterPath(){
+        return properties.getProperty("twitterPath");
+    }
+
+
 }
